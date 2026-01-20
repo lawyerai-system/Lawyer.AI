@@ -1,0 +1,42 @@
+[
+    {
+        "Keyword": "IPC",
+        "FullForm": "Indian Penal Code",
+        "Description": "The Indian Penal Code (IPC) is the official criminal code of India. It is a comprehensive code intended to cover all substantive aspects of criminal law. It was drafted in 1860 on the recommendations of the first law commission of India established in 1834. The Code has since been amended several times and is now supplemented by other criminal provisions."
+    },
+    {
+        "Keyword": "CrPC",
+        "FullForm": "Code of Criminal Procedure",
+        "Description": "The Code of Criminal Procedure (CrPC) is the main legislation on the procedure for administration of substantive criminal law in India. It was enacted in 1973 and came into force on 1 April 1974. It provides the machinery for the investigation of crime, apprehension of suspected criminals, collection of evidence, determination of guilt or innocence of the accused person and the determination of punishment of the guilty."
+    },
+    {
+        "Keyword": "CPC",
+        "FullForm": "Code of Civil Procedure",
+        "Description": "The Code of Civil Procedure, 1908 is a procedural law related to the administration of civil proceedings in India. It consolidates and amends the laws relating to the procedure of the Courts of Civil Judicature."
+    },
+    {
+        "Keyword": "Constitution",
+        "FullForm": "Constitution of India",
+        "Description": "The Constitution of India is the supreme law of India. The document lays down the framework demarcating fundamental political code, structure, procedures, powers, and duties of government institutions and sets out fundamental rights, directive principles, and the duties of citizens. It is the longest written constitution of any country on earth."
+    },
+    {
+        "Keyword": "RTI",
+        "FullForm": "Right to Information",
+        "Description": "Right to Information (RTI) is an act of the Parliament of India which sets out the rules and procedures regarding citizens' right to information. It replaced the former Freedom of Information Act, 2002. Under the provisions of the Act, any citizen of India may request information from a 'public authority' (a body of Government or 'instrumentality of State') which is required to reply expeditiously or within thirty days."
+    },
+    {
+        "Keyword": "SMA",
+        "FullForm": "Special Marriage Act",
+        "Description": "The Special Marriage Act, 1954 is an Act of the Parliament of India enacted to provide a special form of marriage for the people of India and all Indian nationals in foreign countries, irrespective of the religion or faith followed by either party."
+    },
+    {
+        "Keyword": "FIR",
+        "FullForm": "First Information Report",
+        "Description": "A First Information Report (FIR) is a written document prepared by the police when they receive information about the commission of a cognizable offence. It is a report of information that reaches the police first in point of time and that is why it is called the First Information Report."
+    },
+    {
+        "Keyword": "Filing FIR",
+        "FullForm": "Procedure to File an FIR",
+        "Description": "To file an FIR (First Information Report): 1. Visit the nearest police station (or submit online if available in your state). 2. Inform the officer about the offence (orally or in writing). 3. The officer must record it in writing and read it back to you. 4. You must sign the FIR. 5. You are entitled to get a free copy of the FIR."
+    }
+]

@@ -1,0 +1,313 @@
+[
+    {
+    "RTI Section": "Section 1",
+    "Title": "Short Title, Extent, and Commencement",
+    "Description": "This Act may be called the Right to Information Act, 2005. It extends to the whole of India except Jammu and Kashmir. This section establishes the legal framework and applicability of the RTI Act.",
+    "Scope": "Applicable to all public authorities across India, except where exemptions apply.",
+    "Nature of Provision": "Defines the applicability and enforcement of the Act.",
+    "Consequences": "Lays the foundation for the implementation of the RTI framework.",
+    "Solutions": "Proper awareness and accessibility of the Act to ensure its reach.",
+    "Suggestions": "Simplification of language and better dissemination of the Act."
+},
+{
+    "RTI Section": "Section 2",
+    "Title": "Definitions",
+    "Description": "Defines key terms such as 'Appropriate Government,' 'Public Authority,' 'Information,' 'Right to Information,' etc. It provides clarity for uniform understanding and application of the Act. This section ensures consistency in the application of RTI provisions.",
+    "Scope": "Applies to the interpretation of the Act’s provisions.",
+    "Nature of Provision": "Provides clarity on the terminologies used in the Act.",
+    "Consequences": "Ensures consistency in the application of RTI provisions.",
+    "Solutions": "Regular updates to definitions in line with evolving governance structures.",
+    "Suggestions": "Clearer definitions to avoid ambiguity in legal interpretations."
+},
+{
+    "RTI Section": "Section 3",
+    "Title": "Right to Information",
+    "Description": "Grants every citizen the right to access information under the control of public authorities. This section empowers citizens to request and receive information, promoting transparency in governance.",
+    "Scope": "Applies to all public authorities, barring exemptions under Section 8 and 24.",
+    "Nature of Provision": "Provides a legal basis for seeking information from the government.",
+    "Consequences": "Promotes transparency and accountability in governance.",
+    "Solutions": "Simplification of procedures and digital access to information.",
+    "Suggestions": "Training programs for citizens to effectively use RTI."
+},
+{
+    "RTI Section": "Section 4",
+    "Title": "Obligations of Public Authorities",
+    "Description": "Mandates proactive disclosure of certain categories of information by public authorities. This section ensures transparency by reducing the need for RTI applications through voluntary information sharing.",
+    "Scope": "Applies to government departments, public institutions, and organizations funded by the government.",
+    "Nature of Provision": "Ensures proactive transparency to reduce unnecessary RTI applications.",
+    "Consequences": "Non-compliance can lead to penalties and accountability issues.",
+    "Solutions": "Online disclosure mechanisms and regular updates to public records.",
+    "Suggestions": "Better enforcement and public awareness of proactive disclosures."
+},
+{
+    "RTI Section": "Section 5",
+    "Title": "Designation of Public Information Officers (PIOs)",
+    "Description": "Requires public authorities to designate Public Information Officers (PIOs) and Assistant PIOs to handle RTI requests efficiently. This section establishes a structured mechanism for citizens to seek information.",
+    "Scope": "Applies to all government departments and public institutions.",
+    "Nature of Provision": "Ensures designated officers handle RTI applications efficiently.",
+    "Consequences": "Failure to appoint PIOs leads to a lack of accountability in information access.",
+    "Solutions": "Regular training and accountability measures for PIOs.",
+    "Suggestions": "Strict adherence to timelines and improved communication with applicants."
+},
+{
+    "RTI Section": "Section 6",
+    "Title": "Request for Obtaining Information",
+    "Description": "Lays down the procedure for citizens to file RTI applications to obtain information from public authorities. This section defines the process for requesting information and ensures accessibility.",
+    "Scope": "Covers all public authorities where information is sought.",
+    "Nature of Provision": "Empowers citizens to formally request information from government bodies.",
+    "Consequences": "Denial of information without valid reasons can attract penalties.",
+    "Solutions": "Standardized application procedures and easy accessibility.",
+    "Suggestions": "Online RTI filing and response tracking mechanisms should be improved."
+},
+{
+    "RTI Section": "Section 7",
+    "Title": "Disposal of Request",
+    "Description": "Specifies the time frame for responding to RTI applications and the grounds for rejection. This section ensures timely responses to information requests and outlines the conditions for refusal.",
+    "Scope": "Applies to all RTI requests filed with public authorities.",
+    "Nature of Provision": "Ensures timely responses to information requests.",
+    "Consequences": "Failure to provide information within 30 days can lead to penalties for the PIO.",
+    "Solutions": "Monitoring mechanisms to track RTI response efficiency.",
+    "Suggestions": "Reduced bureaucratic delays and better enforcement mechanisms."
+},
+{
+    "RTI Section": "Section 8",
+    "Title": "Exemptions from Disclosure",
+    "Description": "Lists information that is exempt from disclosure, such as national security, personal privacy, and trade secrets. This section balances transparency with the need to protect sensitive data.",
+    "Scope": "Applies to sensitive and classified government information.",
+    "Nature of Provision": "Balances transparency with the need to protect sensitive data.",
+    "Consequences": "Misuse of exemptions may limit access to crucial information.",
+    "Solutions": "Regular reviews of exempted categories to prevent misuse.",
+    "Suggestions": "Clear guidelines to distinguish between valid and excessive exemptions."
+},
+{
+    "RTI Section": "Section 9",
+    "Title": "Grounds for Rejection",
+    "Description": "Specifies conditions under which an RTI request may be rejected. This section ensures fair grounds for rejecting information requests and promotes transparency.",
+    "Scope": "Applies to all public authorities processing RTI requests.",
+    "Nature of Provision": "Ensures fair grounds for rejecting information requests.",
+    "Consequences": "Arbitrary rejection may lead to legal appeals and penalties.",
+    "Solutions": "Guidelines to prevent unjustified rejections and enhance transparency.",
+    "Suggestions": "Review process for rejected applications to avoid misuse."
+},
+{
+    "RTI Section": "Section 10",
+    "Title": "Severability",
+    "Description": "Allows partial disclosure of information if only a portion of the document is exempted. This section ensures that non-exempt information is disclosed even if part of a document is restricted.",
+    "Scope": "Applies to documents containing both exempt and non-exempt information.",
+    "Nature of Provision": "Ensures that at least some part of information is made available where possible.",
+    "Consequences": "Helps prevent excessive denial of information.",
+    "Solutions": "Better redaction techniques and clarity on severability rules.",
+    "Suggestions": "Training for officials on how to apply severability properly."
+},
+{
+    "RTI Section": "Section 11",
+    "Title": "Third Party Information",
+    "Description": "This section deals with information that relates to a third party. If such information is requested, the third party must be consulted. This ensures that privacy and confidential information are protected while promoting transparency.",
+    "Scope": "Applies when information concerning a third party is sought.",
+    "Nature of Provision": "Ensures that third parties are consulted before disclosing their information.",
+    "Consequences": "Failure to consult a third party may result in violations of privacy.",
+    "Solutions": "Proper protocols for consulting third parties should be in place.",
+    "Suggestions": "Clear guidelines on what constitutes third-party information."
+},
+{
+    "RTI Section": "Section 12",
+    "Title": "Central Information Commission",
+    "Description": "The Central Information Commission (CIC) is established to oversee the implementation of the RTI Act. It plays a key role in resolving disputes and ensuring the effective functioning of the RTI framework.",
+    "Scope": "Applies to the establishment, functions, and duties of the CIC.",
+    "Nature of Provision": "Creates a body to address complaints and disputes related to RTI requests.",
+    "Consequences": "Failure to comply with CIC directives can lead to penalties or other actions.",
+    "Solutions": "Effective functioning of CIC with well-defined responsibilities.",
+    "Suggestions": "Periodic training for CIC members and ensuring its independence."
+},
+{
+    "RTI Section": "Section 13",
+    "Title": "State Information Commission",
+    "Description": "Each state is required to establish a State Information Commission to oversee the RTI Act’s implementation at the state level. Similar to the Central Information Commission, it handles complaints and appeals.",
+    "Scope": "Applies to the formation and duties of State Information Commissions.",
+    "Nature of Provision": "Creates state-level bodies for RTI enforcement and dispute resolution.",
+    "Consequences": "Non-compliance can result in similar penalties as under the Central Information Commission.",
+    "Solutions": "Decentralized RTI enforcement to ensure efficient management at the state level.",
+    "Suggestions": "Enhanced coordination between Central and State Information Commissions."
+},
+{
+    "RTI Section": "Section 14",
+    "Title": "Appeals to the Information Commission",
+    "Description": "This section outlines the process for filing appeals with the Information Commissions, both at the state and central levels. The section ensures that individuals can appeal against a decision or inaction on RTI requests.",
+    "Scope": "Applies to the appeal process for RTI decisions.",
+    "Nature of Provision": "Enables citizens to appeal to Information Commissions if their requests are denied or unresolved.",
+    "Consequences": "Failure to respond to appeals can lead to penalties and accountability measures.",
+    "Solutions": "Streamlining the appeal process and ensuring timely resolutions.",
+    "Suggestions": "Clear communication of appeal procedures and timeframes."
+},
+{
+    "RTI Section": "Section 15",
+    "Title": "Decision by the Information Commission",
+    "Description": "This section details the procedure for the Information Commission to make decisions on appeals. It grants the commission the power to give directions to the concerned public authority.",
+    "Scope": "Applies to the final decision-making authority of the Information Commissions.",
+    "Nature of Provision": "Empowers the Information Commission to enforce decisions and directives.",
+    "Consequences": "Failure to comply with decisions of the Information Commission can result in legal consequences.",
+    "Solutions": "Ensuring proper implementation of Information Commission rulings.",
+    "Suggestions": "Regular monitoring of decisions and public authority compliance."
+},
+{
+    "RTI Section": "Section 16",
+    "Title": "Power of the Information Commission",
+    "Description": "The Information Commissions have the power to require public authorities to disclose information, impose penalties for non-compliance, and take other actions to ensure RTI compliance.",
+    "Scope": "Applies to the enforcement powers of the Information Commissions.",
+    "Nature of Provision": "Grants the Information Commissions significant powers to enforce RTI compliance.",
+    "Consequences": "Failure to comply with Information Commission directions can result in penalties or legal actions.",
+    "Solutions": "Clarity on the exercise of powers and improved communication with public authorities.",
+    "Suggestions": "Periodical reviews of the Commission’s powers and their effective use."
+},
+{
+    "RTI Section": "Section 17",
+    "Title": "Penalties",
+    "Description": "This section defines penalties for public information officers who fail to respond to RTI requests or obstruct the process. It also specifies penalties for non-compliance with Information Commission orders.",
+    "Scope": "Applies to penalties for non-compliance with RTI procedures.",
+    "Nature of Provision": "Ensures accountability of public authorities and their officers in the RTI process.",
+    "Consequences": "Failure to adhere to timelines and requirements may result in financial penalties and other actions.",
+    "Solutions": "Enforcement of penalties for non-compliance to encourage accountability.",
+    "Suggestions": "Clear guidelines for when and how penalties should be imposed."
+},
+{
+    "RTI Section": "Section 18",
+    "Title": "Monitoring and Reporting",
+    "Description": "This section mandates the monitoring of the implementation of the RTI Act and the preparation of annual reports. It ensures the accountability of public authorities in promoting transparency.",
+    "Scope": "Applies to monitoring and reporting mechanisms for RTI implementation.",
+    "Nature of Provision": "Mandates oversight and reporting on the functioning of RTI mechanisms.",
+    "Consequences": "Failure to submit reports can indicate inefficiencies in the implementation of RTI.",
+    "Solutions": "Effective monitoring and feedback systems to improve RTI processes.",
+    "Suggestions": "Clear, standardized reporting frameworks for RTI progress."
+},
+{
+    "RTI Section": "Section 19",
+    "Title": "Protection of Action Taken in Good Faith",
+    "Description": "This section protects officials acting in good faith in the execution of RTI duties. It ensures that public authorities and their officers are shielded from liability when performing their duties properly.",
+    "Scope": "Applies to public officials involved in RTI implementation.",
+    "Nature of Provision": "Protects public authorities from liability when actions are taken in good faith.",
+    "Consequences": "Provides legal protection for officers to encourage proactive implementation.",
+    "Solutions": "Regular training on good faith execution of RTI duties.",
+    "Suggestions": "Ensure clear understanding of what constitutes 'good faith' in RTI actions."
+},
+{
+    "RTI Section": "Section 20",
+    "Title": "Exemption from Disclosure of Certain Information",
+    "Description": "This section outlines additional categories of information that are exempt from disclosure, including information related to national security, confidential relationships, and intellectual property. It balances the need for transparency with privacy and security concerns.",
+    "Scope": "Applies to sensitive and confidential information that is protected from RTI requests.",
+    "Nature of Provision": "Exempts certain categories of information from being disclosed under RTI.",
+    "Consequences": "Failure to apply exemptions correctly could result in wrongful disclosures or violations of privacy.",
+    "Solutions": "Clear guidelines for determining exemptions and safeguarding sensitive information.",
+    "Suggestions": "Regular audits of exempted information to ensure accuracy and compliance."
+},
+{
+    "RTI Section": "Section 21",
+    "Title": "Act not applicable to certain organizations",
+    "Description": "This section exempts certain organizations from the application of the RTI Act, including intelligence and security organizations. This ensures that matters related to national security and intelligence gathering are not subject to public disclosure under RTI.",
+    "Scope": "Applies to organizations related to national security, intelligence, and other sensitive areas.",
+    "Nature of Provision": "Exempts certain organizations from RTI disclosure requirements.",
+    "Consequences": "Exemptions could limit public access to information in critical areas.",
+    "Solutions": "Regular assessments of which organizations require exemption under national interest criteria.",
+    "Suggestions": "Clearer guidelines on what constitutes sensitive information that warrants exemption."
+},
+{
+    "RTI Section": "Section 22",
+    "Title": "Act to override other laws",
+    "Description": "The RTI Act takes precedence over other laws in case of a conflict, ensuring that the right to access information is upheld. This makes the RTI Act a cornerstone in the legislative framework for transparency and governance.",
+    "Scope": "Applies to all laws conflicting with the RTI Act.",
+    "Nature of Provision": "Ensures that the RTI Act supersedes other legal provisions that may restrict information access.",
+    "Consequences": "Clarifies that no law can override the provisions of the RTI Act.",
+    "Solutions": "Ensuring that the RTI Act is always in line with the current governance needs.",
+    "Suggestions": "Periodical reviews of existing laws to ensure compliance with RTI provisions."
+},
+{
+    "RTI Section": "Section 23",
+    "Title": "Bar of jurisdiction of courts",
+    "Description": "This section bars the jurisdiction of courts over matters related to the RTI Act. Disputes under the RTI Act must be resolved through the prescribed administrative mechanisms, such as the Information Commissions.",
+    "Scope": "Applies to legal challenges related to the RTI Act.",
+    "Nature of Provision": "Limits the judicial intervention in the functioning of the RTI Act.",
+    "Consequences": "Ensures that disputes are handled within the administrative framework.",
+    "Solutions": "Clear delineation of roles for Information Commissions to handle RTI matters.",
+    "Suggestions": "Efficient resolution of disputes within the prescribed timelines."
+},
+{
+    "RTI Section": "Section 24",
+    "Title": "Act not applicable to certain organizations",
+    "Description": "Section 24 outlines specific organizations that are excluded from the purview of the RTI Act, including intelligence and security agencies. These agencies are not required to disclose information under the Act, except in certain cases.",
+    "Scope": "Applies to intelligence and security organizations.",
+    "Nature of Provision": "Exempts certain security organizations from the RTI Act's coverage.",
+    "Consequences": "National security interests may limit transparency in certain cases.",
+    "Solutions": "Regular review of the exemptions to ensure national security is not compromised.",
+    "Suggestions": "Clear criteria for when exemptions from RTI should apply."
+},
+{
+    "RTI Section": "Section 25",
+    "Title": "Power to make rules",
+    "Description": "This section provides the power to the central and state governments to make rules to carry out the provisions of the RTI Act. It ensures flexibility and adaptation of the RTI Act to the evolving needs of governance and information transparency.",
+    "Scope": "Applies to the rule-making authority of the central and state governments under the RTI Act.",
+    "Nature of Provision": "Grants rule-making power to ensure effective implementation of the RTI Act.",
+    "Consequences": "Ensures that the RTI Act remains relevant and adaptable to future needs.",
+    "Solutions": "Regular updates and revisions of the rules governing RTI procedures.",
+    "Suggestions": "Incorporating stakeholder feedback during the rule-making process."
+},
+{
+    "RTI Section": "Section 26",
+    "Title": "Power to make regulations",
+    "Description": "This section allows the Information Commissions to make regulations for the effective implementation of the RTI Act. It ensures the operational framework of the Commissions aligns with the Act’s objectives.",
+    "Scope": "Applies to regulations made by the Information Commissions to govern RTI implementation.",
+    "Nature of Provision": "Grants regulatory powers to Information Commissions for RTI enforcement.",
+    "Consequences": "Ensures that the RTI Act is executed effectively by the Commissions.",
+    "Solutions": "Effective regulations to guide RTI applications and appeals processes.",
+    "Suggestions": "Clearer guidelines for the development and implementation of regulations."
+},
+{
+    "RTI Section": "Section 27",
+    "Title": "Rules made by the appropriate Government",
+    "Description": "This section allows the appropriate government to make rules for the efficient functioning of the RTI Act within its jurisdiction. These rules must be consistent with the overarching objectives of the RTI Act.",
+    "Scope": "Applies to rule-making authority at the central and state government levels.",
+    "Nature of Provision": "Ensures the practical implementation of RTI at the government level.",
+    "Consequences": "Non-compliance with rules could lead to delays or inefficiencies in RTI processing.",
+    "Solutions": "Clear guidelines and regular updates to the rules to improve RTI processes.",
+    "Suggestions": "Stakeholder consultation for rule-making and implementation processes."
+},
+{
+    "RTI Section": "Section 28",
+    "Title": "Power to remove difficulties",
+    "Description": "This section allows the government to take necessary steps to remove any difficulties in implementing the RTI Act. It ensures the smooth functioning of the Act, even if issues arise during its implementation.",
+    "Scope": "Applies to actions taken to address any operational difficulties in the RTI Act’s implementation.",
+    "Nature of Provision": "Grants the government the power to resolve implementation challenges.",
+    "Consequences": "Ensures that obstacles in RTI Act implementation are addressed promptly.",
+    "Solutions": "Regular monitoring to identify and resolve challenges in RTI implementation.",
+    "Suggestions": "Clear communication of measures taken to resolve implementation difficulties."
+},
+{
+    "RTI Section": "Section 29",
+    "Title": "Protection of action taken in good faith",
+    "Description": "This section provides protection to public officials acting in good faith while performing their duties under the RTI Act. It ensures that officials are not held personally liable when acting within the scope of their responsibilities.",
+    "Scope": "Applies to public authorities and officials executing duties under the RTI Act.",
+    "Nature of Provision": "Protects officials from legal consequences when acting in good faith.",
+    "Consequences": "Encourages officials to take necessary actions without fear of personal liability.",
+    "Solutions": "Clarity on what constitutes 'good faith' actions under the Act.",
+    "Suggestions": "Training programs to ensure officials understand the scope of 'good faith' actions."
+},
+{
+    "RTI Section": "Section 30",
+    "Title": "Right to Information on request",
+    "Description": "This section provides citizens the right to access information on demand, subject to the provisions and exceptions stated under the RTI Act. It emphasizes that information should be accessible to all citizens unless restricted by the Act.",
+    "Scope": "Applies to all citizens seeking information from public authorities.",
+    "Nature of Provision": "Ensures that citizens have the right to request and receive information.",
+    "Consequences": "Failure to provide information within the prescribed timelines can lead to penalties.",
+    "Solutions": "Improved responsiveness and streamlined information-sharing mechanisms.",
+    "Suggestions": "Awareness campaigns to encourage citizens to exercise their RTI rights."
+},
+{
+    "RTI Section": "Section 31",
+    "Title": "Exemptions from disclosure under certain laws",
+    "Description": "This section outlines the exemptions from disclosure under other specific laws, such as national security or confidential trade information. It ensures that sensitive matters remain protected while balancing transparency with privacy.",
+    "Scope": "Applies to cases where the information is exempt under other laws.",
+    "Nature of Provision": "Exempts certain categories of sensitive information from RTI disclosure.",
+    "Consequences": "Certain information may be withheld under the provisions of national interest or security laws.",
+    "Solutions": "Clear definitions of exempted categories of information.",
+    "Suggestions": "Periodic review of exemptions to ensure they are not overly restrictive."
+}
+
+]
