@@ -1,0 +1,19 @@
+📝 Instructions for Teammates
+
+  1. Download & Unzip: Download the project or git clone it.
+
+  2. Install Dependencies (They must do this for both folders):
+    - Open Terminal in the main folder: npm install
+    - Then go to backend: cd backend and run npm install
+    - Come back to main: cd ..
+
+  3. Add the Secrets (Important!): You need to send them your two .env files (via WhatsApp, Discord, or Email—NOT GitHub).
+    - File 1: Create a file named .env in the ROOT folder. 
+        Paste the content from your local root .env (Firebase config).
+    - File 2: Create a file named .env in the BACKEND folder.
+        Paste the content from your local backend/.env (MongoDB, OpenAI, Twilio keys).
+
+  4. Run the Project:
+    - Now they can run: npm run dev
+  
+Summary: If they just download and run npm run dev without step 3, the app will crash because it won't know how to connect to the database or Firebase.
