@@ -159,6 +159,37 @@ const UserManagement = () => {
         setUserToDelete(user);
     };
 
+    // Modal styles
+    const ModalOverlay = styled.div`
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.7); display: flex; justify-content: center; align-items: center;
+        z-index: 1001; backdrop-filter: blur(5px);
+    `;
+    const ModalContent = styled.div`
+        background: var(--bg-secondary); padding: 2rem; border-radius: 12px;
+        width: 90%; max-width: 500px; border: 1px solid var(--border);
+        position: relative; color: var(--text-main);
+    `;
+    const DetailRow = styled.div`
+        margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem;
+        display: flex; justify-content: space-between;
+        &:last-child { border-bottom: none; }
+    `;
+    const Label = styled.span`color: var(--text-secondary); font-size: 0.9rem;`;
+    const Value = styled.span`font-weight: 500; text-align: right;`;
+    const CloseBtn = styled.button`
+        position: absolute; top: 1rem; right: 1rem; background: none; border: none;
+        color: white; font-size: 1.5rem; cursor: pointer;
+    `;
+    const Avatar = styled.div`
+        width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1.5rem;
+        background: var(--primary); display: flex; align-items: center; justify-content: center;
+        font-size: 2rem; font-weight: bold; overflow: hidden;
+        img { width: 100%; height: 100%; object-fit: cover; }
+    `;
+
+    const [selectedUser, setSelectedUser] = useState(null);
+
     return (
         <Container>
             <Header>
@@ -189,13 +220,18 @@ const UserManagement = () => {
                             <tr><Td colSpan="4" style={{ textAlign: 'center' }}>No users found.</Td></tr>
                         ) : (
                             filteredUsers.map(u => (
-                                <tr key={u._id}>
+                                <tr key={u._id} onClick={() => setSelectedUser(u)} style={{ cursor: 'pointer', transition: 'background 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'} onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}>
                                     <Td>
-                                        <div style={{ fontWeight: 500 }}>{u.name}</div>
+                                        <div style={{ fontWeight: 500, display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                            <div style={{ width: '30px', height: '30px', borderRadius: '50%', background: 'var(--primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.8rem' }}>
+                                                {u.profileImage ? <img src={u.profileImage.startsWith('http') ? u.profileImage : `http://localhost:5000${u.profileImage}`} alt="" style={{ width: '100%', height: '100%', borderRadius: '50%' }} /> : u.name?.[0]}
+                                            </div>
+                                            {u.name}
+                                        </div>
                                     </Td>
                                     <Td>{u.email}</Td>
                                     <Td><Badge role={u.role}>{u.role}</Badge></Td>
-                                    <Td>
+                                    <Td onClick={(e) => e.stopPropagation()}>
                                         <ActionButton
                                             danger
                                             onClick={() => handleDeleteClick(u)}
@@ -219,6 +255,50 @@ const UserManagement = () => {
                 message={`Are you sure you want to delete user `}
                 itemName={userToDelete?.name}
             />
+
+            {selectedUser && (
+                <ModalOverlay onClick={() => setSelectedUser(null)}>
+                    <ModalContent onClick={(e) => e.stopPropagation()}>
+                        <CloseBtn onClick={() => setSelectedUser(null)}>&times;</CloseBtn>
+                        <h3 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>User Details</h3>
+
+                        <Avatar>
+                            {selectedUser.profileImage ? <img src={selectedUser.profileImage.startsWith('http') ? selectedUser.profileImage : `http://localhost:5000${selectedUser.profileImage}`} alt="" /> : selectedUser.name?.[0]}
+                        </Avatar>
+
+                        <DetailRow>
+                            <Label>Full Name</Label>
+                            <Value>{selectedUser.name}</Value>
+                        </DetailRow>
+                        <DetailRow>
+                            <Label>Email</Label>
+                            <Value>{selectedUser.email}</Value>
+                        </DetailRow>
+                        <DetailRow>
+                            <Label>Phone</Label>
+                            <Value>{selectedUser.phone || 'N/A'}</Value>
+                        </DetailRow>
+                        <DetailRow>
+                            <Label>Role</Label>
+                            <Value><Badge role={selectedUser.role}>{selectedUser.role}</Badge></Value>
+                        </DetailRow>
+                        <DetailRow>
+                            <Label>Status</Label>
+                            <Value style={{ color: selectedUser.verified ? '#48bb78' : '#fca5a5' }}>
+                                {selectedUser.verified ? 'Verified' : 'Unverified'}
+                            </Value>
+                        </DetailRow>
+                        <DetailRow>
+                            <Label>User ID</Label>
+                            <Value style={{ fontSize: '0.8rem', fontFamily: 'monospace' }}>{selectedUser._id}</Value>
+                        </DetailRow>
+                        <DetailRow>
+                            <Label>Joined On</Label>
+                            <Value>{new Date(selectedUser.createdAt).toLocaleDateString()}</Value>
+                        </DetailRow>
+                    </ModalContent>
+                </ModalOverlay>
+            )}
         </Container>
     );
 };

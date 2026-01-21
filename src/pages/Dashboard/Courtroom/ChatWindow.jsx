@@ -217,8 +217,14 @@ const ChatWindow = () => {
     };
 
     if (!chatId) return (
-        <Wrapper style={{ alignItems: 'center', justifyContent: 'center', color: 'gray' }}>
-            Select a contact or room to start chatting
+        <Wrapper style={{ alignItems: 'center', justifyContent: 'center', color: 'var(--text-secondary)', textAlign: 'center', padding: '2rem' }}>
+            <div style={{ fontSize: '4rem', marginBottom: '1rem', color: 'var(--primary)' }}>
+                <FaPaperPlane style={{ transform: 'rotate(-45deg)' }} />
+            </div>
+            <h2 style={{ color: 'var(--text-main)', marginBottom: '0.5rem' }}>Welcome to Your Courtroom</h2>
+            <p style={{ maxWidth: '400px', lineHeight: '1.6' }}>
+                Select a contact from the sidebar to securely discuss case details.
+            </p>
         </Wrapper>
     );
 

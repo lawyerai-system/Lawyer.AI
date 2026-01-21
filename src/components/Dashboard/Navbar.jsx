@@ -212,7 +212,7 @@ const Navbar = () => {
     <>
       <NavContainer>
         <Logo onClick={() => navigate('/dashboard')}>
-          Law<span>AI</span>
+          LAWYER<span>.AI</span>
         </Logo>
 
         <NavLinks>
@@ -296,7 +296,7 @@ const Navbar = () => {
       {/* Mobile Menu Panel */}
       <MobileMenu $isOpen={isMobileOpen}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <Logo>Law<span>AI</span></Logo>
+          <Logo>LAWYER<span>.AI</span></Logo>
           <MobileMenuBtn onClick={() => setIsMobileOpen(false)}>
             <FaXmark />
           </MobileMenuBtn>

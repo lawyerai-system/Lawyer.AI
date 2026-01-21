@@ -84,29 +84,29 @@ const SocialLink = styled.a`
 `;
 
 const Footer = () => {
-    return (
-        <FooterContainer>
-            <LeftSection>
-                <h3>LAWYER.AI</h3>
-                <p>&copy; {new Date().getFullYear()} Lawyer.AI. All rights reserved.</p>
-            </LeftSection>
+  return (
+    <FooterContainer>
+      <LeftSection>
+        <h3>LAWYER.AI</h3>
+        <p>&copy; {new Date().getFullYear()} Lawyer.AI. All rights reserved.</p>
+      </LeftSection>
 
-            <LinksSection>
-                <div style={{ display: 'flex', gap: '1.5rem' }}>
-                    <StyledLink to="/dashboard/features">Features</StyledLink>
-                    <StyledLink to="/dashboard/about">About Us</StyledLink>
-                    <StyledLink to="/dashboard/contact">Contact</StyledLink>
-                </div>
+      <LinksSection>
+        <div style={{ display: 'flex', gap: '1.5rem' }}>
+          <StyledLink to="/dashboard/features">Features</StyledLink>
+          <StyledLink to="/dashboard/about">About Us</StyledLink>
+          <StyledLink to="/dashboard/contact">Contact</StyledLink>
+        </div>
 
-                <SocialIcons>
-                    <SocialLink href="https://facebook.com" target="_blank"><FaFacebookF /></SocialLink>
-                    <SocialLink href="https://twitter.com" target="_blank"><FaTwitter /></SocialLink>
-                    <SocialLink href="https://linkedin.com" target="_blank"><FaLinkedinIn /></SocialLink>
-                    <SocialLink href="https://instagram.com" target="_blank"><FaInstagram /></SocialLink>
-                </SocialIcons>
-            </LinksSection>
-        </FooterContainer>
-    );
+        <SocialIcons>
+          <SocialLink href="https://facebook.com" target="_blank"><FaFacebookF /></SocialLink>
+          <SocialLink href="https://twitter.com" target="_blank"><FaTwitter /></SocialLink>
+          <SocialLink href="https://linkedin.com" target="_blank"><FaLinkedinIn /></SocialLink>
+          <SocialLink href="https://instagram.com" target="_blank"><FaInstagram /></SocialLink>
+        </SocialIcons>
+      </LinksSection>
+    </FooterContainer>
+  );
 };
 
 export default Footer;

@@ -15,6 +15,10 @@ const PageContainer = styled.div`
   flex-direction: column;
   gap: 3rem;
   overflow-y: auto; /* Allow internal scrolling if content overflows */
+  user-select: none; /* Prevent text selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 `;
 
 const HeaderSection = styled.div`
@@ -407,7 +411,11 @@ const IPCPage = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <PageContainer>
+    <PageContainer
+      onCopy={(e) => e.preventDefault()}
+      onCut={(e) => e.preventDefault()}
+      onContextMenu={(e) => e.preventDefault()}
+    >
       <HeaderSection>
         <Title>IPC Knowledge Base</Title>
         <Subtitle>
