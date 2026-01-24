@@ -75,10 +75,14 @@ const searchLegalData = async (query) => {
 
         // 3. Token Matching (Bag of Words)
         tokens.forEach(token => {
-            if (section.includes(token)) score += 10;
+            // Only give high points for token matching SECTION if it is a number
+            if (section.includes(token)) {
+                if (/\d/.test(token)) score += 10; // It's a number (e.g. '302'), good match
+                else score += 1; // It's just text (e.g. 'ipc'), weak match
+            }
             if (title.includes(token)) score += 5;
             if (desc.includes(token)) score += 1;
-            if (source.includes(token)) score += 2;
+            if (source.includes(token)) score += 1;
         });
 
         // Boost for "Drafting" queries if item is related to contracts/agreements
@@ -90,10 +94,13 @@ const searchLegalData = async (query) => {
     });
 
     // Filter relevant results and sort by score
+    // Threshold adjusted to 25 to force generic queries (score ~5-10) to Fallback
+    // Direct hits like "Murder" (30+) or "Section 302" (40+) will still pass.
     return results
-        .filter(r => r.score > 0)
+        .filter(r => r.score >= 25)
         .sort((a, b) => b.score - a.score)
         .slice(0, 5); // Return top 5
 };
+
 
 module.exports = { searchLegalData };

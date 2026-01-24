@@ -68,7 +68,7 @@ const LogoPanel = () => {
       <LogoContainer>
         <FaGavel />
       </LogoContainer>
-      <Title>LawAI</Title>
+      <Title>Lawyer.AI</Title>
       <Subtitle>
         Empowering citizens and legal professionals with advanced AI-driven improved legal insights and tools.
       </Subtitle>

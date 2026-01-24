@@ -2,20 +2,10 @@ const ChatSession = require('../models/ChatSession');
 const legalService = require('../services/legalService');
 // const { findIPC } = require('../services/ipcService'); // Deprecated in favor of legalService // Fallback service
 const axios = require('axios');
-const OpenAI = require('openai');
+// const OpenAI = require('openai'); // Deprecated
 
-// Safe initialization of OpenAI
-let openai;
-try {
-    const apiKey = process.env.THINKSTACK_API_KEY || process.env.OPENAI_API_KEY;
-    if (apiKey) {
-        openai = new OpenAI({ apiKey });
-    } else {
-        console.warn("OpenAI API Key missing. Using fallback/simulation mode.");
-    }
-} catch (err) {
-    console.warn("OpenAI initialization failed:", err.message);
-}
+// Google Gemini Initialization handled in helper
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 // Helper function to get answer from Python ML Service
 const getMLAnswer = async (question) => {
@@ -31,19 +21,24 @@ const getMLAnswer = async (question) => {
 };
 
 // Helper function to get answer from OpenAI (ChatGPT)
-const getOpenAIAnswer = async (question) => {
-    if (!openai) return null;
+// Helper function to get answer from Google Gemini
+const getGeminiAnswer = async (question) => {
+    if (!process.env.GEMINI_API_KEY) return null;
     try {
-        const completion = await openai.chat.completions.create({
-            messages: [
-                { role: "system", content: "You are LawAI, a helpful and intelligent legal assistant for Indian Law. You provide accurate, concise, and professional answers. If the user asks a general question, answer politely. If it's a legal question, provide broad context." },
-                { role: "user", content: question }
-            ],
-            model: "gpt-3.5-turbo",
-        });
-        return completion.choices[0].message.content;
+        const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+        // Using gemini-1.5-flash for speed and efficiency
+        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+        const prompt = `You are LawAI, a helpful and intelligent legal assistant for Indian Law. 
+        You provide accurate, concise, and professional answers. 
+        If it's a legal question, provide broad context and cite relevant acts (IPC, CrPC, etc.) if possible.
+        User Query: ${question}`;
+
+        const result = await model.generateContent(prompt);
+        const response = await result.response;
+        return response.text();
     } catch (error) {
-        console.error("OpenAI API Error:", error.message);
+        console.error("Gemini API Error:", error.message);
         return null;
     }
 };
@@ -69,13 +64,12 @@ const getSimulatedAnswer = async (query) => {
         }
     } catch (e) { console.error("Legal Search Error:", e); }
 
-    if (lowerQuery.includes('hello') || lowerQuery.includes('hi')) return "Hello! I am Lawyer.AI. How can I assist you with your legal queries today?";
-    if (lowerQuery.includes('draft')) return "I can help you draft legal documents. Please specify the type of agreement (e.g., Rent Agreement, NDA).";
-    if (lowerQuery.includes('divorce')) return "Divorce laws in India vary by religion. For detailed advice, consulting a Family Lawyer is recommended. Generally, mutual consent divorce takes 6-18 months.";
-    if (lowerQuery.includes('property')) return "Property disputes are governed by the Transfer of Property Act. Key documents include the Title Deed and Mother Deed.";
-    if (lowerQuery.includes('agreement')) return "A valid agreement requires offer, acceptance, and consideration. I can help outline the key clauses for you.";
 
-    return "I searched my legal database (covering IPC, CrPC, CPC, RTI, etc.) but couldn't find a specific reference for that. Please try asking about a specific Section (e.g., 'IPC 420') or use legal keywords.";
+    // Removed hardcoded checks to allow Gemini to handle all general/drafting queries.
+
+
+    // If no specific legal data found and no hardcoded match, return null to allow Gemini to take over
+    return null;
 };
 
 const sendMessage = async (req, res) => {
@@ -115,20 +109,19 @@ const sendMessage = async (req, res) => {
             source = 'ml';
         }
 
-        // 2. Try OpenAI
+        // 2. Try Local Legal Data (JSON) - Strict Search
         if (!botResponse) {
-            const aiResponse = await getOpenAIAnswer(message);
-            if (aiResponse) {
-                botResponse = aiResponse;
-                source = 'openai';
-            }
+            botResponse = await getSimulatedAnswer(message);
+            if (botResponse) source = 'simulated';
         }
 
-        // 3. Fallback / Simulation
+        // 3. Try Gemini (Fallback for General Qs or No JSON Match)
         if (!botResponse) {
-            console.log("Using Simulation/Fallback AI");
-            botResponse = await getSimulatedAnswer(message);
-            source = 'simulated';
+            const aiResponse = await getGeminiAnswer(message);
+            if (aiResponse) {
+                botResponse = aiResponse;
+                source = 'gemini';
+            }
         }
 
         // Save Bot Message
